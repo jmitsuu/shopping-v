@@ -10,7 +10,7 @@ export function Products(props: any) {
     >
      <img
       className="xl:h-64 h-52 m-auto scale-100 hover:scale-105 transition duration-300 cursor-pointer rounded-md "
-      src={`https://shoppingoriaj.com.jairo3478.c35.integrator.host/${props.path_image}`}
+      src={{props.path_image}}
      />
     </Link>
 
