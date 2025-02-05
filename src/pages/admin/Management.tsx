@@ -102,7 +102,7 @@ export function Management() {
          <TableRow key={item._id} className="">
           <TableCell className="font-bold text-center">{item._id}</TableCell>
           <TableCell className="font-bold text-center">
-           <img src={item.image_url} className="h-10" />
+           <img src={`https://shoppingoriaj.com.jairo3478.c35.integrator.host/${item.path_image}`} className="h-10" />
           </TableCell>
           <TableCell className="font-bold text-center">{item.title}</TableCell>
           <TableCell className="font-bold text-center">{item.price}</TableCell>

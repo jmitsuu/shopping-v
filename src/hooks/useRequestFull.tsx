@@ -13,7 +13,7 @@ if(filterComments){
   return{
     _id:items._id,
     title:items.title,
-    image_url:items.image_url,
+    path_image:items.path_image,
     price:items.price,
     description:items.description,
     genenere:items.genere,

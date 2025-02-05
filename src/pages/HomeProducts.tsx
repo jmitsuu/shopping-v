@@ -36,7 +36,7 @@ export function HomeProducts() {
         key={item._id}
         title={item.title}
         price={item.price}
-        image_url={item.image_url}
+        image_url={item.path_image}
         item={item}
        />
       );

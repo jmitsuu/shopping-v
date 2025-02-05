@@ -4,10 +4,9 @@ import { FetchComments } from "@/api/comments/FetchComments";
 export function TopRated({ items }: any) {
  const { comments } = FetchComments();
  if (!comments) return;
-const response =  items.sort(
+ const response = items.sort(
   (a: { price: number }, b: { price: number }) => b.price - a.price
-)
-
+ );
 
  const limitedArr = response.slice(0, 4);
 
@@ -26,7 +25,7 @@ const response =  items.sort(
          key={prod._id}
          cn={"text-xs text-gray-400 font-bold "}
          title={prod.title}
-         image_url={prod.image_url}
+         image_url={prod.path_image}
          price={prod.price}
          item={prod}
         />
