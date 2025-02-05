@@ -62,7 +62,7 @@ export function ModalAside(props: any) {
             key={index}
            >
             <div className="flex">
-             <img src={el.image_url} className="h-16  rounded-sm" />
+             <img src={`https://shoppingoriaj.com.jairo3478.c35.integrator.host/${el.path_image}`} className="h-16  rounded-sm" />
              <div className="col ml-2">
               <h1 className=" lowercase w-32 text-[0.7rem] ">{el.title}</h1>
               <p className=" lowercase w-32 text-[0.7rem] ">

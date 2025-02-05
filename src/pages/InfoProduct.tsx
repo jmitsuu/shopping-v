@@ -73,7 +73,10 @@ export function InfoProduct() {
    <div className=" xl:min-h-[600px] xl:w-[900px] w-full border rounded-xl mb-24 mt-10">
     <div className="xl:flex p-8 justify-center items-center">
      <div className=" md:w-80  overflow-hidden md:m-auto ">
-      <img src={findItem.image_url} className="xl:h-96  rounded-md  w-full  " />
+      <img
+       src={`https://shoppingoriaj.com.jairo3478.c35.integrator.host/${findItem.path_image}`}
+       className="xl:h-96  rounded-md  w-full  "
+      />
       <div className="text-slate-700  md:block hidden mt-10 sm:mb-10">
        <h1 className="text-slate-600 font-semibold">Descrição:</h1>
        <p className="font-bold text-[12px] w-80">{findItem.description}</p>
@@ -89,9 +92,7 @@ export function InfoProduct() {
        ) : (
         <span className="flex pl-2">
          {" "}
-      
-         { useStars(Number(totalVote / findItem.comments[0].length).toFixed(1))} 
-         
+         {useStars(Number(totalVote / findItem.comments[0].length).toFixed(1))}
         </span>
        )}
       </h2>
@@ -186,9 +187,8 @@ export function InfoProduct() {
        >
         <div className=" flex flex-col justify-center gap-2 ">
          <h1 className="text-[15px] font-bold ">{el.name}</h1>
-         <div className="text-yellow-500 flex">{ useStars(el.voto)}</div>
-      
-        
+         <div className="text-yellow-500 flex">{useStars(el.voto)}</div>
+
          <p className="text-gray-600 text-[14px]">{el.comentario}</p>
         </div>
        </div>

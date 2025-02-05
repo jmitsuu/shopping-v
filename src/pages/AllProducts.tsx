@@ -94,7 +94,7 @@ export function AllProducts() {
                 key={item._id}
                 title={item.title}
                 price={item.price}
-                image_url={item.image_url}
+                path_image={item.path_image}
                 item={item}
               />
             );
