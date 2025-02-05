@@ -91,12 +91,12 @@ export function AllProducts() {
           {results.map((item: arrItems) => {
             return (
               <Products
-                key={item._id}
-                title={item.title}
-                price={item.price}
-                path_image={item.path_image}
-                item={item}
-              />
+              key={item._id}
+              title={item.title}
+              price={item.price}
+              path_image={`https://shoppingoriaj.com.jairo3478.c35.integrator.host/${item.path_image}`}
+              item={item}
+             />
             );
           })}
         </div>

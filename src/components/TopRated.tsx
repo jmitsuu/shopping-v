@@ -19,15 +19,14 @@ export function TopRated({ items }: any) {
       Destaques
      </h1>
      <div className=" xl:grid xl:grid-cols-4 md:grid-cols-3   ">
-      {limitedArr.map((prod: arrItems) => {
+      {limitedArr.map((item: arrItems) => {
        return (
         <Products
-         key={prod._id}
-         cn={"text-xs text-gray-400 font-bold "}
-         title={prod.title}
-         image_url={prod.path_image}
-         price={prod.price}
-         item={prod}
+         key={item._id}
+         title={item.title}
+         price={item.price}
+         path_image={`https://shoppingoriaj.com.jairo3478.c35.integrator.host/${item.path_image}`}
+         item={item}
         />
        );
       })}
